@@ -25,7 +25,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Admin bo‘lsa, alohida salom
     if user_id == ADMIN_CHAT_ID:
-        await update.message.reply_text("Assalomu alaykum, bosh admin!")
+        await update.message.reply_text("Assalomu alaykum, Direktor! bu bot orqali sizga murojaatlar keladi.")
 
     # Reply (quyi) menyu tugmalari
     reply_keyboard = [
@@ -39,7 +39,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("💡 Taklif", callback_data='Taklif')],
         [InlineKeyboardButton("❓ Savol", callback_data='Savol')],
         [InlineKeyboardButton("📝 Ariza", callback_data='Ariza')],
-        [InlineKeyboardButton("📄 Rahbariyatga murojaat", callback_data='Rahbariyatga murojaat')],
+        [InlineKeyboardButton("📄 Rahbariyatga murojaat", callback_data='Direktorga murojaat')],
     ]
 
     await update.message.reply_text(
