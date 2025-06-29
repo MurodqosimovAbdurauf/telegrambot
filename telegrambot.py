@@ -48,11 +48,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
     # Reply menyuni ko‘rsatish
-    await update.message.reply_text(
-        "Quyidagi menyudan foydalanishingiz mumkin 👇",
-        reply_markup=reply_markup
-    )
-
+    
     return SELECT_TYPE
 
 # Murojaat turi tanlangach
